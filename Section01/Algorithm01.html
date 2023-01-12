@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>최소 값 구하기</title>
+</head>
+
+<body>
+  <script>
+    function solution(a, b, c) {
+      num = 0;
+      if (a < b) {
+        num = a;
+      } else {
+        num = b;
+      }
+
+      if (num > c) {
+        num = c;
+      }
+      return num
+    }
+
+    console.log(solution(6, 5, 11))
+  </script>
+</body>
+
+</html>
