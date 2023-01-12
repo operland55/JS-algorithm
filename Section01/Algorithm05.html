@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>최소 값 구하기</title>
+</head>
+
+<body>
+  <script>
+    function solution(a) {
+      let answer = Number.MAX_SAFE_INTEGER;
+
+      for (let i = 0; i < a.length; i++) {
+        if (answer > a[i]) {
+          answer = a[i]
+        }
+      }
+      return answer;
+    }
+
+    let arr = [5, 3, 7, 11, 2, 15, 17]
+    console.log(solution(arr))
+  </script>
+</body>
+
+</html>
